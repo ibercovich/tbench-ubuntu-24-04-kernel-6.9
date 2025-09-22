@@ -38,7 +38,8 @@ RUN cd linux-6.9 && ./scripts/config --enable BLK_DEV_INITRD
 
 # Ensure dependencies are properly set
 RUN cd linux-6.9 && make olddefconfig
-```
+
 
 # Build the kernel
 RUN cd linux-6.9 && make -j$(nproc)
+```
